@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aplikasi Skor Biliard 3 Player</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <h1>🎱 Game Score</h1>
+  <div class="container">
+    <input type="text" id="name1" placeholder="Player Name 1" />
+    <input type="text" id="name2" placeholder="Player Name 2" />
+    <input type="text" id="name3" placeholder="Player Name 3" />
+    <button onclick="startGame()">Start</button>
+    <a href="../index.html" class="btn-switch">Switch to 2 Players</a>
+
+    <div id="scoreboard" class="scoreboard" style="display: none;">
+      <div class="player">
+        <h2 id="player1Name">Player 1</h2>
+        <div class="score" id="score1">0</div>
+        <div class="buttons">
+          <button onclick="addScore(1, 1)">+1</button>
+          <button class="minus" onclick="addScore(1, -1)">−1</button>
+        </div>
+      </div>
+
+      <div class="player">
+        <h2 id="player2Name">Player 2</h2>
+        <div class="score" id="score2">0</div>
+        <div class="buttons">
+          <button onclick="addScore(2, 1)">+1</button>
+          <button class="minus" onclick="addScore(2, -1)">−1</button>
+        </div>
+      </div>
+
+      <div class="player">
+        <h2 id="player3Name">Player 3</h2>
+        <div class="score" id="score3">0</div>
+        <div class="buttons">
+          <button onclick="addScore(3, 1)">+1</button>
+          <button class="minus" onclick="addScore(3, -1)">−1</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="resetArea" style="margin-top: 20px; display: none;">
+      <button onclick="resetScore()" class="reset">🔄 Reset Score</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
