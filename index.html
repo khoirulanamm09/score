@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aplikasi Skor Biliard 2 Player</title>
+  <title>🎱 Black Poll</title>
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <h1>🎱 Game Score</h1>
   <div class="container">
-    <input type="text" id="name1" placeholder="Player Name 1">
-    <input type="text" id="name2" placeholder="Player Name 2">
-    <button onclick="startGame()">Start</button>
-    <a href="player3/index.html" class="btn-switch">Switch to 3 Players</a>
+    <input type="text" id="name1" placeholder="Player 1">
+    <input type="text" id="name2" placeholder="Player 2">
+
+    <div class="button-group">
+      <button onclick="startGame()">Start</button>
+      <a href="player3/index.html" class="btn-switch">Switch</a>
+    </div>
 
     <div id="scoreboard" class="scoreboard" style="display:none;">
       <div class="player">
